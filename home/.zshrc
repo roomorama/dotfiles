@@ -44,7 +44,8 @@ RPROMPT='%{$reset_color%} %{$fg[red]%} %{$reset_color%}'
 
 plugins=(rails git textmate ruby lighthouse brew)
 
-source $DOTFILES/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
+source /opt/boxen/env.sh
 unsetopt correct_all
 
 
