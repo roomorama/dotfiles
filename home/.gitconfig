@@ -5,6 +5,9 @@
 [github]
   user = donaldpiret
 
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
+
 [alias]
   br = branch
   cb = "!sh -c 'git branch $1 && git ch $1' -"
@@ -15,7 +18,7 @@
   fc = commit -am 'Initial commit.'
   cpush = "!sh -c 'git commit -au -m \"$1\" && git push -u origin' -"
   d = diff
-  st = status --short
+  st = status
 
   graph = log --graph
   last = log -n 10
@@ -23,6 +26,8 @@
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
   discard = checkout -- .
   rmtag = "!sh -c 'git tag -d $1; git push origin :refs/tags/$1'"
+  lp = log -p
+  di = diff
 
 [push]
   default = current
@@ -32,7 +37,7 @@
 
 [core]
   editor = mate
-  excludesfile = ~/.gitignore
+  excludesfile = /opt/boxen/config/git/gitignore
 
 [format]
   pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
@@ -60,3 +65,6 @@
 
 [mergetool]
   keepBackup = true
+
+[hub]
+  protocol = https
