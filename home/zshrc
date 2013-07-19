@@ -10,6 +10,8 @@ then
   source ~/.localrc
 fi
 
+ZSH_THEME="robbyrussell"
+
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/*.zsh)
@@ -37,15 +39,6 @@ do
 done
 
 unset config_files
-
-
-ZSH_THEME="robbyrussell"
-RPROMPT='%{$reset_color%} %{$fg[red]%} %{$reset_color%}'
-
-plugins=(rails git textmate ruby lighthouse brew)
-
-source $DOTFILES/oh-my-zsh.sh
-unsetopt correct_all
 
 
 
