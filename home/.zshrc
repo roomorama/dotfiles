@@ -40,4 +40,5 @@ done
 
 unset config_files
 
-
+# Boxen stuff
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
