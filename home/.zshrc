@@ -1,5 +1,5 @@
 export ZSH=$HOME/.oh-my-zsh
-export DOTFILES=$HOME/dotfiles/zsh
+export DOTFILES=$HOME/dotfiles
 
 export PROJECTS=~/Projects
 
@@ -14,7 +14,7 @@ ZSH_THEME="robbyrussell"
 
 # all of our zsh files
 typeset -U config_files
-config_files=($DOTFILES/*.zsh)
+config_files=($DOTFILES/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
