@@ -1,9 +1,9 @@
 [user]
-  name = Donald Piret
-  email = donald@donaldpiret.com
+  name = Roomorama Developer
+  email = developers@roomorama.com
 
 [github]
-  user = donaldpiret
+  user = roomorama_dev
 
 [credential]
   helper = /opt/boxen/bin/boxen-git-credential
